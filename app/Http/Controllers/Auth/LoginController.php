@@ -108,7 +108,7 @@ class LoginController extends Controller
             $driver = Socialite::driver($provider);
             $user = $driver->user();
             
-            $authUser = $this->findOrCreateUser($user, $provider);dd($user, $driver);
+            $authUser = $this->findOrCreateUser($user, $provider);
             
             if(!empty($authUser->password)) {
                 Auth::login($authUser, true);
@@ -131,7 +131,7 @@ class LoginController extends Controller
     public function findOrCreateUser($user, $provider)
     {
         $authUser = User::where('email', $user->email)
-                        ->first();dd($user);
+                        ->first();
         
         if ($authUser) {
             if(empty($authUser->provider_id)) {

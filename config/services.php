@@ -42,14 +42,14 @@ return [
 
     /* Social Media */
     'facebook' => [
-        'client_id'     => '790223781375961',
-        'client_secret' => '82878e867bc77a489a6656f3f1010d98',
-        'redirect'      => 'https://site.test/auth/facebook/callback',
+        'client_id'     => '',
+        'client_secret' => '',
+        'redirect'      => 'https://',
     ],
     'twitter' => [
-        'client_id'     => 'azrjaJvcbpBhV26RqRHK86SH3',
-        'client_secret' => 'NyvRN1bo2i8MX9eDwwzu7EbJGvKIrhWS2mhuMmgEJ6Q5lWQSpC',
-        'redirect'      => 'https://site.test/auth/twitter/callback',
+        'client_id'     => '',
+        'client_secret' => '',
+        'redirect'      => 'https://',
     ],
 
 ];
